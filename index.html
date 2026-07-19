@@ -18,7 +18,8 @@
 
   body {
     margin: 0;
-    background: var(--paper);
+    /* the day deepens as you walk: slate daylight into dusk, where the fire gets lit */
+    background: linear-gradient(180deg, #46606f 0%, #46606f 52%, #374a56 76%, #242a32 100%);
     color: var(--ink);
     font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     line-height: 1.3;
@@ -159,6 +160,50 @@
     border-radius: 999px;
     margin-right: 0.35rem;
   }
+  .powers .sci {
+    display: block;
+    margin-top: 0.42rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+  }
+  .powers .sci b {
+    font-weight: 800;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink);
+    background: var(--mark-paper);
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    margin-right: 0.35rem;
+  }
+  .ahead { list-style: none; margin: 2.4rem 0 0; padding: 0; }
+  .ahead li { padding: 1.05rem 0; border-top: 1px solid var(--ink-soft); }
+  .ahead .t {
+    display: block;
+    font-weight: 800;
+    font-size: 1.35rem;
+    letter-spacing: -0.012em;
+    margin-bottom: 0.2rem;
+  }
+  .ahead .d {
+    font-size: 1.02rem;
+    font-weight: 500;
+    color: var(--ink-soft);
+  }
+  .close .l {
+    display: block;
+    font-weight: 800;
+    letter-spacing: -0.022em;
+    line-height: 1.06;
+    margin-top: 0.35rem;
+  }
+  .close .l1 { font-size: clamp(1.4rem, 3vw + 0.6rem, 2rem); opacity: 0.9; }
+  .close .l2 { font-size: clamp(1.8rem, 4vw + 0.7rem, 2.6rem); opacity: 0.95; }
+  .close .l3 { font-size: clamp(2.3rem, 5vw + 0.8rem, 3.4rem); }
+  .close .l4 { font-size: clamp(2.9rem, 6.5vw + 0.9rem, 4.4rem); }
+  .close .l5 { font-size: clamp(3.3rem, 8vw + 1rem, 5.6rem); }
   .manual { list-style: none; margin: 2.6rem 0 0; padding: 0; }
   .manual li { padding: 1rem 0; border-top: 1px solid var(--ink-soft); }
   .manual .t {
@@ -298,7 +343,8 @@
   <!-- 6 . the honest beat -->
   <div class="beat">
     <h2>There will be <mark class="hl-lilac">down days</mark>. There always were.</h2>
-    <p>And here is the record: you have come back from <b>every single one</b>. Undefeated. The downs are real. They are also <b>outnumbered</b> ,  by every photo above this line.</p>
+    <p>And here is the record: you have come back from <b>every single one</b>. Undefeated. The downs are real. They are also <b>outnumbered</b>. Scroll back up and count.</p>
+    <p>Your own words hold here: <b>a cascade, not a character flaw</b>. It passes. You remain.</p>
   </div>
 
   <!-- 7 . the superpowers -->
@@ -312,6 +358,7 @@
         <span class="how">The fire everyone else has to fake. Aimed, it builds whole worlds.</span>
         <span class="lever max"><b>Lever</b> Interest, challenge, urgency. It never runs on should.</span>
         <span class="receipt max"><b>Receipt</b> An instrument for your whole life, built in a month of nights.</span>
+        <span class="sci max"><b>Science</b> Wiklund's studies: founders carry ADHD at multiples of the base rate, and it predicts speed to action. Hyperfocus is the documented edge.</span>
       </li>
       <li>
         <span class="dx">OCD</span>
@@ -319,6 +366,7 @@
         <span class="how">You build things true. Exactness nobody can teach.</span>
         <span class="lever max"><b>Lever</b> Aim it at craft. Never at checking.</span>
         <span class="receipt max"><b>Receipt</b> The 18 edges you authored across your ten domains. That survey came from your hand.</span>
+        <span class="sci max"><b>Science</b> The error-monitoring circuits that loop are the same ones that catch what everyone else ships broken. Regulated, the lab calls it conscientiousness.</span>
       </li>
       <li>
         <span class="dx">RSD</span>
@@ -326,6 +374,7 @@
         <span class="how">You feel a room before it speaks. That is why they trust you.</span>
         <span class="lever max"><b>Lever</b> Trust it outward, verify it inward. Read the room, never co-sign the sting.</span>
         <span class="receipt max"><b>Receipt</b> Clients hand you the real thing in the first hour. They can feel the radar caring.</span>
+        <span class="sci max"><b>Science</b> Dodson, who named RSD, is blunt about the flip side: the same antenna, aimed outward, is elite social intuition.</span>
       </li>
       <li>
         <span class="dx">Anxiety</span>
@@ -333,6 +382,7 @@
         <span class="how">You see around corners. Prepared is your default setting.</span>
         <span class="lever max"><b>Lever</b> Give it a real job. It writes the pre-mortem the Fortune 500 pays consultants for.</span>
         <span class="receipt max"><b>Receipt</b> You ask for the risk map before anyone else sees the reef. Every time.</span>
+        <span class="sci max"><b>Science</b> Norem's defensive pessimism research: worriers who plan perform with the best optimists. Worry, given a job, is strategy.</span>
       </li>
       <li>
         <span class="dx">Depression</span>
@@ -340,6 +390,7 @@
         <span class="how">Nothing about you is shallow. People feel that and stay.</span>
         <span class="lever max"><b>Lever</b> Keep the depth. Never sign its verdicts.</span>
         <span class="receipt max"><b>Receipt</b> Fortify exists because your depth came back with a map. Client zero built the practice.</span>
+        <span class="sci max"><b>Science</b> Tedeschi's post-traumatic growth: people who return from the bottom measure higher in meaning, connection, and purpose. Lincoln ran a war on it.</span>
       </li>
     </ul>
     <ul class="manual max">
@@ -364,11 +415,36 @@
     <p class="canon">"Some days I can make the world turn with one thought."<br>Your words. Still true.</p>
   </div>
 
-  <!-- 8 . the close -->
+  <!-- 8 . still ahead -->
+  <div class="beat">
+    <h2>Still ahead, and <mark class="hl-sky">already in motion</mark>.</h2>
+    <ul class="ahead">
+      <li>
+        <span class="t">Reckoning, on shelves.</span>
+        <span class="d">The book is real. Chapter one of the next gets penned in a London pub, David across the table.</span>
+      </li>
+      <li>
+        <span class="t">The Sydney stage.</span>
+        <span class="d">Maddy's app on the big screen. Maddy at your side. Your story and your data holding the room.</span>
+      </li>
+      <li>
+        <span class="t">The wild map.</span>
+        <span class="d">McCloud water. Bhutan temples. Everest is on the list because you put it there, and you meant it.</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 9 . the ignition -->
   <div class="close">
-    <h2>It works.<br>It's <mark class="hl-red">fruitful</mark>.<br>You're in it.</h2>
-    <p>Not someday. Look back up. It's already begun.</p>
-    <p class="stamp">Built from your real life. July 2026</p>
+    <h2>
+      <span class="l l1">It works.</span>
+      <span class="l l2">It's fruitful.</span>
+      <span class="l l3">You're in it.</span>
+      <span class="l l4">FUCK YEAH.</span>
+      <span class="l l5"><mark class="hl-red">LET'S GO.</mark></span>
+    </h2>
+    <p>Say it out loud. Then go turn the world.</p>
+    <p class="stamp">All of it real. All of it yours. July 2026</p>
   </div>
 
 </main>
