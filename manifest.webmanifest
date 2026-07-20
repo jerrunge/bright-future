@@ -1,0 +1,13 @@
+{
+  "name": "This Is Going To Work",
+  "short_name": "LET'S GO",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#242a32",
+  "theme_color": "#242a32",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
